@@ -1,0 +1,3 @@
+Hash / Browser Router{
+    차이점 확인하기..
+}
