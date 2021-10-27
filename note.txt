@@ -1,3 +1,23 @@
 Hash / Browser Router{
     차이점 확인하기..
 }
+
+useState(Hooks){
+동적인 값 = state
+user Interactive를 통해 state를 바꾸기 위해 관리
+
+const[current value, setter value] = userState(default value)
+same as
+const valueState = useState()
+const currentValue = valueState[0]
+const setterValue = valueState[1]
+
+// setterValue 함수를 이용해서 새로운 업데이트 값을 입력
+// 업데이트 값을 값이나 함수도 가능
+
+const IncreaseValue = () => {setterValue(preNum + 1)}
+const IncreaseValue = () => {setterValue(preNum => preNum+1)}
+
+// 이후 갱신된 값을 렌더링
+{currentValue}
+}   
