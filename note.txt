@@ -1,5 +1,13 @@
 Hash / Browser Router{
-    차이점 확인하기..
+    Hash - 주소에 #가 붙는다
+    검색엔진이 읽지 못한다
+    URL 해시를 서버에서 읽지 못하므로 ServerSide Rendering 설정으로 백업 불가
+    + Hash Hisotory 미지원
+
+    Browser - Link component to 속성에 경로 할당
+    Browser Router는 History Api 사용
+
+    최근 browser router를 선호, History location 등을 지원 다양한 기능 사용
 }
 
 useState(Hooks){
@@ -20,4 +28,19 @@ const IncreaseValue = () => {setterValue(preNum => preNum+1)}
 
 // 이후 갱신된 값을 렌더링
 {currentValue}
-}   
+}
+
+{
+    styled components / css`` 활용
+    ThemeProvider / props.theme 활용
+    styled-reset
+    createGlobalStyle{
+        전역에 css 적용
+         createGlobalStyle`
+         body{
+             color:white
+         }`
+    }
+    }
+}
+

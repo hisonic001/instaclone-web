@@ -12,7 +12,7 @@
 
 ```
 [✔] Router
-[] Authentication
-[] Arch.
-[] Style
+[✔] Authentication
+[✔] Arch.
+[✔] Style
 ```
