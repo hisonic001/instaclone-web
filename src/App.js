@@ -1,11 +1,12 @@
 import { colorModeVar, isLoggedInVar } from "./apollo";
 import { useReactiveVar } from "@apollo/client";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./screens/Home";
 import Login from "./screens/Login";
+import SignUp from "./screens/SignUp";
 import NotFound from "./screens/NotFound";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./styles";
+import routes from "./screens/routes";
 
 function App() {
   // login 여부 확인
@@ -21,9 +22,12 @@ function App() {
       <Router>
         {/* switch로 한번에 하나의 route만 가능하게 */}
         <Switch>
-          <Route path="/" exact>
-            {isLoggedIn ? <Home /> : <Login />}
+          <Route path={routes.login} exact>
+            <Login />
           </Route>
+
+          <Route path={routes.signUp}>{isLoggedIn ? null : <SignUp />}</Route>
+
           {/* 정해지지 않은 루트로 진입시  Not Found return*/}
           <Route>
             <NotFound />
