@@ -11,8 +11,9 @@ import Button from "../components/auth/Button";
 import Separator from "../components/auth/Separator";
 import Input from "../components/auth/Input";
 import { BottomBox, TopBox } from "../components/auth/FormBox";
-// Styled Component 적용
+import PageTitle from "../components/common/PageTitle";
 
+// Styled Component 적용
 const FacebookLogin = styled.div`
   color: #385285;
   span {
@@ -26,6 +27,7 @@ const FacebookLogin = styled.div`
 const Login = () => {
   return (
     <AuthLayout>
+      <PageTitle title="Login" />
       <TopBox>
         <div>
           <FontAwesomeIcon icon={faInstagram} size="4x" color="orange" />
